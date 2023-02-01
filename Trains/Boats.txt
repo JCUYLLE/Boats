@@ -1,0 +1,32 @@
+======================================
+Boten
+======================================
+
+Deze applicatie simuleert boten. Een boot rijdt telkens van station naar station, bij elke stop kunnen er mensen
+op- of afstappen. Betalen gebeurt bij het opstappen om zwart rijden tegen te gaan. De meeste code van een boot
+vind je in de abstracte klasse Boat. Alle boten die effectief aangemaakt kunnen worden, vind
+je in de package "boats". De passagiersboot is af en werkt, bij SpeedBoat en CruiseShip moeten jullie nog code schrijven.
+De functies die jullie zelf moeten schrijven, staan er al maar werken niet echt (enkel om te compileren).
+
+Werk de code af op basis van volgende opdrachten (let op de punten):
+
+1) Schrijf testen voor PassengerBoat zodat je zeker bent dat: [15 punten]
+    - Een nieuwe boot telkens leeg is (qua passagiers en balans)
+    - Een boot effectief het aantal mensen heeft, die opgestapt zijn
+    - Een boot nooit te veel mensen kan laten opstappen
+    - Een boot nooit te veel mensen kan laten afstappen
+    - Een passagiersboot naar de volgende halte vaart
+
+2) Vervolledig de code van CruiseShip zodat:  [5 punten]
+    - mensen enkel in het begin- of eindstation kunnen opstappen
+    - iedereen afstapt in het begin- of eindstation (ongeacht hoeveel er meegegeven wordt)
+    - Schrijf hier een testklasse voor
+
+3) Vervolledig de code van SpeedBoat zodat:  [5 punten]
+    - de boot rijdt van het beginstation rechtstreeks naar het eindstation en omgekeerd
+    - Schrijf hier een testklasse voor
+
+4) Schrijf een BoatFactory die de juiste boot aanmaakt op basis van de naam:  [5 punten]
+    - CruiseShip: alle boten die het woord "cruise" bevatten
+    - SpeedBoat: alle namen die het woord "fast" of "speed" bevatten
+    - PassengerBoat: alle andere boten
